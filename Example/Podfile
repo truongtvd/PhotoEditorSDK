@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SMPhotoEditorSDK_Example' do
+  pod 'SMPhotoEditorSDK', :path => '../'
+
+  target 'SMPhotoEditorSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
