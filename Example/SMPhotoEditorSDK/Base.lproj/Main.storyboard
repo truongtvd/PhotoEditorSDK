@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,11 +20,53 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Zes-RW-aUt">
+                                <rect key="frame" x="8" y="183.5" width="359" height="300"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meow" translatesAutoresizingMaskIntoConstraints="NO" id="xDI-qG-RKA">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="146"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2jZ-cH-XDE">
+                                        <rect key="frame" x="0.0" y="154" width="359" height="146"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="4hG-aw-NYA"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnB-wr-ScI">
+                                <rect key="frame" x="137.5" y="567" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="TZQ-it-mFn"/>
+                                    <constraint firstAttribute="width" constant="100" id="XfG-6r-8Sp"/>
+                                </constraints>
+                                <state key="normal" title="Change"/>
+                                <connections>
+                                    <action selector="changeAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XWK-Ht-KbC"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cnB-wr-ScI" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Ufn-Ws-wbm"/>
+                            <constraint firstItem="Zes-RW-aUt" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="f7R-Eg-SRU"/>
+                            <constraint firstAttribute="trailing" secondItem="Zes-RW-aUt" secondAttribute="trailing" constant="8" id="lyw-Ig-NQz"/>
+                            <constraint firstItem="Zes-RW-aUt" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="8" id="nLE-iR-MBb"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="cnB-wr-ScI" secondAttribute="bottom" constant="50" id="qVb-i8-1en"/>
+                            <constraint firstItem="Zes-RW-aUt" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="yfh-un-Vmy"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imv" destination="2jZ-cH-XDE" id="bB1-0D-4GZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-114.40000000000001" y="67.916041979010501"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="meow" width="1600" height="911"/>
+    </resources>
 </document>

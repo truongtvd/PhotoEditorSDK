@@ -1,0 +1,16 @@
+PODS:
+  - SMPhotoEditorSDK (0.1.0)
+
+DEPENDENCIES:
+  - SMPhotoEditorSDK (from `../`)
+
+EXTERNAL SOURCES:
+  SMPhotoEditorSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SMPhotoEditorSDK: 3c7ccbe87524887941e0b38fc6d727fc31aa34d1
+
+PODFILE CHECKSUM: ce734b45874390482b0fb2f20f41daf05fcb40b7
+
+COCOAPODS: 1.6.0.beta.1

@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F88844A608430AFA9A6BAA9C7DCC6EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		19677C21B7B16E92655B01A4F4C4D2DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		1D9899F0EB6C9A3261E0BCC1CB07367E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		314AAF868930D08AA1974113D9EE8C20 /* Pods-SMPhotoEditorSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 95E468795CFBC222D26A9BB43BD9C28D /* Pods-SMPhotoEditorSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A44736DAE4F70B95063487AB711D4B8 /* SMPhotoEditorSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A674C71D32386C1ED0A8A0DF5F3C74BF /* SMPhotoEditorSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		620A6878C9FC1C5D8D042B78D74C5952 /* Pods-SMPhotoEditorSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A27B5B1D67C4DD9B4EAB99B7B4A13E /* Pods-SMPhotoEditorSDK_Tests-dummy.m */; };
+		6A3FB0038FB9ACBE18C47DB3FAE0777E /* SMPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2BC4605C81CBF2B00707341A3D62F0 /* SMPhoto.swift */; };
+		82EC55C5C35922C9FD23CD6F38A4C422 /* Pods-SMPhotoEditorSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 251FB881E22F6E2DBF2122AD5DED8657 /* Pods-SMPhotoEditorSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7118FFF809CF3AF5C072A4E9C4506C7 /* SMPhotoEditorSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C426AE330386478F9B4E89AF41010237 /* SMPhotoEditorSDK-dummy.m */; };
+		D5BC2A4336F00C4C494E76FC25D52A62 /* Pods-SMPhotoEditorSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CCBD475BAF8D1FCEF91E8BF782189 /* Pods-SMPhotoEditorSDK_Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CB02C5856DADF12B5650F6FE4FF44A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6AFC72E26AA0EFEAE2F0DB7E529A940;
+			remoteInfo = SMPhotoEditorSDK;
+		};
+		715155C210A4C603597C11DA279D0613 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03301531752FB9B302ED6A698BE97D0A;
+			remoteInfo = "Pods-SMPhotoEditorSDK_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03890D7E3CCFDF94816A196ADC69CEB9 /* SMPhotoEditorSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SMPhotoEditorSDK.framework; path = SMPhotoEditorSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04654602F8AFB9BD057E32FF324C563E /* Pods-SMPhotoEditorSDK_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SMPhotoEditorSDK_Example-Info.plist"; sourceTree = "<group>"; };
+		08A27B5B1D67C4DD9B4EAB99B7B4A13E /* Pods-SMPhotoEditorSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SMPhotoEditorSDK_Tests-dummy.m"; sourceTree = "<group>"; };
+		124CA636072EC892C60077EB51178B20 /* SMPhotoEditorSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SMPhotoEditorSDK.modulemap; sourceTree = "<group>"; };
+		1F2BC4605C81CBF2B00707341A3D62F0 /* SMPhoto.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SMPhoto.swift; path = SMPhotoEditorSDK/Classes/SMPhoto.swift; sourceTree = "<group>"; };
+		251FB881E22F6E2DBF2122AD5DED8657 /* Pods-SMPhotoEditorSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SMPhotoEditorSDK_Example-umbrella.h"; sourceTree = "<group>"; };
+		30F5A301047EF780960AA6808794E351 /* Pods-SMPhotoEditorSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SMPhotoEditorSDK_Example.modulemap"; sourceTree = "<group>"; };
+		3D1631FED883D5B61E4A0561D46C2CFD /* SMPhotoEditorSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SMPhotoEditorSDK.xcconfig; sourceTree = "<group>"; };
+		46C92EBF39A0471607CAA13767B8E008 /* Pods-SMPhotoEditorSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SMPhotoEditorSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		58856F202737B8DDF1469370E1854662 /* Pods-SMPhotoEditorSDK_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SMPhotoEditorSDK_Tests-Info.plist"; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5C9E3F55F765B7C7F8935FB8F9154DB1 /* Pods-SMPhotoEditorSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SMPhotoEditorSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		650DC5B78BC35D6F9E286A5486A85C8E /* SMPhotoEditorSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SMPhotoEditorSDK-prefix.pch"; sourceTree = "<group>"; };
+		67B0B95835BB4FE4556D334F32A60AA1 /* Pods_SMPhotoEditorSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SMPhotoEditorSDK_Tests.framework; path = "Pods-SMPhotoEditorSDK_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		792870445A6E5968B7C1CEDC4BEF3555 /* Pods-SMPhotoEditorSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SMPhotoEditorSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8232339F228481AB29BE767719D31EC4 /* Pods-SMPhotoEditorSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SMPhotoEditorSDK_Tests.modulemap"; sourceTree = "<group>"; };
+		857416BC6CF6327F2E28D996E134DA13 /* Pods-SMPhotoEditorSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SMPhotoEditorSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8A4CCBD475BAF8D1FCEF91E8BF782189 /* Pods-SMPhotoEditorSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SMPhotoEditorSDK_Example-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95E468795CFBC222D26A9BB43BD9C28D /* Pods-SMPhotoEditorSDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SMPhotoEditorSDK_Tests-umbrella.h"; sourceTree = "<group>"; };
+		9DAC2C708DD16BCA1C72E43997AC09E7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A674C71D32386C1ED0A8A0DF5F3C74BF /* SMPhotoEditorSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SMPhotoEditorSDK-umbrella.h"; sourceTree = "<group>"; };
+		B1E05B5D67AA217397DC10DC93124295 /* Pods-SMPhotoEditorSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SMPhotoEditorSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B21D951F311A44958F12056E8AEF34B6 /* Pods-SMPhotoEditorSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SMPhotoEditorSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		BF8E0138B79C563A85471DDD00819B59 /* Pods-SMPhotoEditorSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SMPhotoEditorSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C426AE330386478F9B4E89AF41010237 /* SMPhotoEditorSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SMPhotoEditorSDK-dummy.m"; sourceTree = "<group>"; };
+		CA687D9D5AA83E2C22A5A4122F210FBD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		E16AA57EA302C72BB4516D0236C3A426 /* Pods_SMPhotoEditorSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SMPhotoEditorSDK_Example.framework; path = "Pods-SMPhotoEditorSDK_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDBC271FBCF2D47205748CC203CE6931 /* SMPhotoEditorSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = SMPhotoEditorSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FFA17D352C20C80EB98CC02AB77A6F5A /* Pods-SMPhotoEditorSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SMPhotoEditorSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4AE0DAB32DF976365063D6DC1B8C9F44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D9899F0EB6C9A3261E0BCC1CB07367E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		756E95F9536CC8BEB77E64636F792C82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19677C21B7B16E92655B01A4F4C4D2DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3011F70A5BB45E478D537434F30FD2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F88844A608430AFA9A6BAA9C7DCC6EF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		616854991C93D59E358DC8E2326A32B9 /* SMPhotoEditorSDK */ = {
+			isa = PBXGroup;
+			children = (
+				1F2BC4605C81CBF2B00707341A3D62F0 /* SMPhoto.swift */,
+				8C4C4A3C7A7838B6339C0805CAC7AA3C /* Pod */,
+				937C725A1625815E007822FA0F126FC5 /* Support Files */,
+			);
+			name = SMPhotoEditorSDK;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				E7623CF425B27DFF0CF26B1AADD27077 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				EF9F3653CCA7DF7C699FD39A02051B15 /* Products */,
+				F9A404D73D916AC3152151455F25F08D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8C4C4A3C7A7838B6339C0805CAC7AA3C /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				9DAC2C708DD16BCA1C72E43997AC09E7 /* LICENSE */,
+				CA687D9D5AA83E2C22A5A4122F210FBD /* README.md */,
+				FDBC271FBCF2D47205748CC203CE6931 /* SMPhotoEditorSDK.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		937C725A1625815E007822FA0F126FC5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				124CA636072EC892C60077EB51178B20 /* SMPhotoEditorSDK.modulemap */,
+				3D1631FED883D5B61E4A0561D46C2CFD /* SMPhotoEditorSDK.xcconfig */,
+				C426AE330386478F9B4E89AF41010237 /* SMPhotoEditorSDK-dummy.m */,
+				650DC5B78BC35D6F9E286A5486A85C8E /* SMPhotoEditorSDK-prefix.pch */,
+				A674C71D32386C1ED0A8A0DF5F3C74BF /* SMPhotoEditorSDK-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SMPhotoEditorSDK";
+			sourceTree = "<group>";
+		};
+		B309D66974100A5BDFD5C34298AE7D66 /* Pods-SMPhotoEditorSDK_Example */ = {
+			isa = PBXGroup;
+			children = (
+				30F5A301047EF780960AA6808794E351 /* Pods-SMPhotoEditorSDK_Example.modulemap */,
+				857416BC6CF6327F2E28D996E134DA13 /* Pods-SMPhotoEditorSDK_Example-acknowledgements.markdown */,
+				5C9E3F55F765B7C7F8935FB8F9154DB1 /* Pods-SMPhotoEditorSDK_Example-acknowledgements.plist */,
+				8A4CCBD475BAF8D1FCEF91E8BF782189 /* Pods-SMPhotoEditorSDK_Example-dummy.m */,
+				04654602F8AFB9BD057E32FF324C563E /* Pods-SMPhotoEditorSDK_Example-Info.plist */,
+				251FB881E22F6E2DBF2122AD5DED8657 /* Pods-SMPhotoEditorSDK_Example-umbrella.h */,
+				B21D951F311A44958F12056E8AEF34B6 /* Pods-SMPhotoEditorSDK_Example.debug.xcconfig */,
+				BF8E0138B79C563A85471DDD00819B59 /* Pods-SMPhotoEditorSDK_Example.release.xcconfig */,
+			);
+			name = "Pods-SMPhotoEditorSDK_Example";
+			path = "Target Support Files/Pods-SMPhotoEditorSDK_Example";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D27787BA64335B18DD6DB160C5847DDF /* Pods-SMPhotoEditorSDK_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8232339F228481AB29BE767719D31EC4 /* Pods-SMPhotoEditorSDK_Tests.modulemap */,
+				46C92EBF39A0471607CAA13767B8E008 /* Pods-SMPhotoEditorSDK_Tests-acknowledgements.markdown */,
+				B1E05B5D67AA217397DC10DC93124295 /* Pods-SMPhotoEditorSDK_Tests-acknowledgements.plist */,
+				08A27B5B1D67C4DD9B4EAB99B7B4A13E /* Pods-SMPhotoEditorSDK_Tests-dummy.m */,
+				58856F202737B8DDF1469370E1854662 /* Pods-SMPhotoEditorSDK_Tests-Info.plist */,
+				95E468795CFBC222D26A9BB43BD9C28D /* Pods-SMPhotoEditorSDK_Tests-umbrella.h */,
+				792870445A6E5968B7C1CEDC4BEF3555 /* Pods-SMPhotoEditorSDK_Tests.debug.xcconfig */,
+				FFA17D352C20C80EB98CC02AB77A6F5A /* Pods-SMPhotoEditorSDK_Tests.release.xcconfig */,
+			);
+			name = "Pods-SMPhotoEditorSDK_Tests";
+			path = "Target Support Files/Pods-SMPhotoEditorSDK_Tests";
+			sourceTree = "<group>";
+		};
+		E7623CF425B27DFF0CF26B1AADD27077 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				616854991C93D59E358DC8E2326A32B9 /* SMPhotoEditorSDK */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		EF9F3653CCA7DF7C699FD39A02051B15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E16AA57EA302C72BB4516D0236C3A426 /* Pods_SMPhotoEditorSDK_Example.framework */,
+				67B0B95835BB4FE4556D334F32A60AA1 /* Pods_SMPhotoEditorSDK_Tests.framework */,
+				03890D7E3CCFDF94816A196ADC69CEB9 /* SMPhotoEditorSDK.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9A404D73D916AC3152151455F25F08D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B309D66974100A5BDFD5C34298AE7D66 /* Pods-SMPhotoEditorSDK_Example */,
+				D27787BA64335B18DD6DB160C5847DDF /* Pods-SMPhotoEditorSDK_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1F452B79BE0978265292ABD998E41FA4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A44736DAE4F70B95063487AB711D4B8 /* SMPhotoEditorSDK-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58CD9F256B70190C781304FF123D35C7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				314AAF868930D08AA1974113D9EE8C20 /* Pods-SMPhotoEditorSDK_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C45B9B41189A579C058C8FE951FCD00 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82EC55C5C35922C9FD23CD6F38A4C422 /* Pods-SMPhotoEditorSDK_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		03301531752FB9B302ED6A698BE97D0A /* Pods-SMPhotoEditorSDK_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72DE42991C415560593FAFBF6A4027E6 /* Build configuration list for PBXNativeTarget "Pods-SMPhotoEditorSDK_Example" */;
+			buildPhases = (
+				6C45B9B41189A579C058C8FE951FCD00 /* Headers */,
+				30E6D0145EDA52397153C7CB63C156D6 /* Sources */,
+				4AE0DAB32DF976365063D6DC1B8C9F44 /* Frameworks */,
+				5F0E954CE7E5EFD97756D3BB8233A816 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A926887D69A406C5B8F62DA363AD45E4 /* PBXTargetDependency */,
+			);
+			name = "Pods-SMPhotoEditorSDK_Example";
+			productName = "Pods-SMPhotoEditorSDK_Example";
+			productReference = E16AA57EA302C72BB4516D0236C3A426 /* Pods_SMPhotoEditorSDK_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		90E9F2B6A7AA6B7D991450C4F17E6D08 /* Pods-SMPhotoEditorSDK_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF9F0CFF89BD0879881A4D33244A2410 /* Build configuration list for PBXNativeTarget "Pods-SMPhotoEditorSDK_Tests" */;
+			buildPhases = (
+				58CD9F256B70190C781304FF123D35C7 /* Headers */,
+				766C4833DF856E6D03961218EDF85950 /* Sources */,
+				756E95F9536CC8BEB77E64636F792C82 /* Frameworks */,
+				6C7E0135F2C11CFFF8314AE2B4649AD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73F9785A87AD0B8ABF880543507F74AF /* PBXTargetDependency */,
+			);
+			name = "Pods-SMPhotoEditorSDK_Tests";
+			productName = "Pods-SMPhotoEditorSDK_Tests";
+			productReference = 67B0B95835BB4FE4556D334F32A60AA1 /* Pods_SMPhotoEditorSDK_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D6AFC72E26AA0EFEAE2F0DB7E529A940 /* SMPhotoEditorSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0D9BDCFF90E3A8CE1BA87F89F842CC5 /* Build configuration list for PBXNativeTarget "SMPhotoEditorSDK" */;
+			buildPhases = (
+				1F452B79BE0978265292ABD998E41FA4 /* Headers */,
+				3D6973E1DD17407BCA1D18504CC2F71E /* Sources */,
+				E3011F70A5BB45E478D537434F30FD2B /* Frameworks */,
+				0F11D832F669CEECCE282578FFF06887 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SMPhotoEditorSDK;
+			productName = SMPhotoEditorSDK;
+			productReference = 03890D7E3CCFDF94816A196ADC69CEB9 /* SMPhotoEditorSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = EF9F3653CCA7DF7C699FD39A02051B15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03301531752FB9B302ED6A698BE97D0A /* Pods-SMPhotoEditorSDK_Example */,
+				90E9F2B6A7AA6B7D991450C4F17E6D08 /* Pods-SMPhotoEditorSDK_Tests */,
+				D6AFC72E26AA0EFEAE2F0DB7E529A940 /* SMPhotoEditorSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F11D832F669CEECCE282578FFF06887 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F0E954CE7E5EFD97756D3BB8233A816 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C7E0135F2C11CFFF8314AE2B4649AD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30E6D0145EDA52397153C7CB63C156D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5BC2A4336F00C4C494E76FC25D52A62 /* Pods-SMPhotoEditorSDK_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D6973E1DD17407BCA1D18504CC2F71E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A3FB0038FB9ACBE18C47DB3FAE0777E /* SMPhoto.swift in Sources */,
+				A7118FFF809CF3AF5C072A4E9C4506C7 /* SMPhotoEditorSDK-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		766C4833DF856E6D03961218EDF85950 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				620A6878C9FC1C5D8D042B78D74C5952 /* Pods-SMPhotoEditorSDK_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		73F9785A87AD0B8ABF880543507F74AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SMPhotoEditorSDK_Example";
+			target = 03301531752FB9B302ED6A698BE97D0A /* Pods-SMPhotoEditorSDK_Example */;
+			targetProxy = 715155C210A4C603597C11DA279D0613 /* PBXContainerItemProxy */;
+		};
+		A926887D69A406C5B8F62DA363AD45E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SMPhotoEditorSDK;
+			target = D6AFC72E26AA0EFEAE2F0DB7E529A940 /* SMPhotoEditorSDK */;
+			targetProxy = 4CB02C5856DADF12B5650F6FE4FF44A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		40B45BB3CF3EE4476259302A7FAAD78F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		5408DDE0AB30A4F87CC6F92536418B9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B21D951F311A44958F12056E8AEF34B6 /* Pods-SMPhotoEditorSDK_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SMPhotoEditorSDK_Example/Pods-SMPhotoEditorSDK_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SMPhotoEditorSDK_Example/Pods-SMPhotoEditorSDK_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		85ED3013A635C27F8B7FAF51362B108C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A5D179F675B5EE15324DA24CF62D0B07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D1631FED883D5B61E4A0561D46C2CFD /* SMPhotoEditorSDK.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SMPhotoEditorSDK/SMPhotoEditorSDK-prefix.pch";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/SMPhotoEditorSDK/SMPhotoEditorSDK.modulemap";
+				PRODUCT_MODULE_NAME = SMPhotoEditorSDK;
+				PRODUCT_NAME = SMPhotoEditorSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A9EF21268BD5456EBD476F0888BF130B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF8E0138B79C563A85471DDD00819B59 /* Pods-SMPhotoEditorSDK_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SMPhotoEditorSDK_Example/Pods-SMPhotoEditorSDK_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SMPhotoEditorSDK_Example/Pods-SMPhotoEditorSDK_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D6CAD55BE369A957528B0905A4E248B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFA17D352C20C80EB98CC02AB77A6F5A /* Pods-SMPhotoEditorSDK_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SMPhotoEditorSDK_Tests/Pods-SMPhotoEditorSDK_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SMPhotoEditorSDK_Tests/Pods-SMPhotoEditorSDK_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D79DF8CA15926D0D987236B32731A8F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 792870445A6E5968B7C1CEDC4BEF3555 /* Pods-SMPhotoEditorSDK_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SMPhotoEditorSDK_Tests/Pods-SMPhotoEditorSDK_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SMPhotoEditorSDK_Tests/Pods-SMPhotoEditorSDK_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F7F559E0680BD25FA78A843569F9B86A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D1631FED883D5B61E4A0561D46C2CFD /* SMPhotoEditorSDK.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SMPhotoEditorSDK/SMPhotoEditorSDK-prefix.pch";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/SMPhotoEditorSDK/SMPhotoEditorSDK.modulemap";
+				PRODUCT_MODULE_NAME = SMPhotoEditorSDK;
+				PRODUCT_NAME = SMPhotoEditorSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85ED3013A635C27F8B7FAF51362B108C /* Debug */,
+				40B45BB3CF3EE4476259302A7FAAD78F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72DE42991C415560593FAFBF6A4027E6 /* Build configuration list for PBXNativeTarget "Pods-SMPhotoEditorSDK_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5408DDE0AB30A4F87CC6F92536418B9F /* Debug */,
+				A9EF21268BD5456EBD476F0888BF130B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0D9BDCFF90E3A8CE1BA87F89F842CC5 /* Build configuration list for PBXNativeTarget "SMPhotoEditorSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5D179F675B5EE15324DA24CF62D0B07 /* Debug */,
+				F7F559E0680BD25FA78A843569F9B86A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF9F0CFF89BD0879881A4D33244A2410 /* Build configuration list for PBXNativeTarget "Pods-SMPhotoEditorSDK_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D79DF8CA15926D0D987236B32731A8F6 /* Debug */,
+				D6CAD55BE369A957528B0905A4E248B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

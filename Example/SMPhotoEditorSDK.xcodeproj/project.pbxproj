@@ -40,9 +40,9 @@
 		607FACE51AFB9204008FA782 /* SMPhotoEditorSDK_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMPhotoEditorSDK_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		61145080D17D67F666BDA840 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		6CFFDF9F3B46035CF5BD10D1 /* SMPhotoEditorSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SMPhotoEditorSDK.podspec; path = ../SMPhotoEditorSDK.podspec; sourceTree = "<group>"; };
-		7A8DD416DF3856523CC875A5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		61145080D17D67F666BDA840 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6CFFDF9F3B46035CF5BD10D1 /* SMPhotoEditorSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SMPhotoEditorSDK.podspec; path = ../SMPhotoEditorSDK.podspec; sourceTree = "<group>"; };
+		7A8DD416DF3856523CC875A5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A0C2A278F6BA807E7DAAC7DB /* Pods-SMPhotoEditorSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMPhotoEditorSDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-SMPhotoEditorSDK_Tests/Pods-SMPhotoEditorSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C7BEFF90A097C1D27E72EB73 /* Pods_SMPhotoEditorSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SMPhotoEditorSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBDCF8CA81C9E72FB04A1C9F /* Pods_SMPhotoEditorSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SMPhotoEditorSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,7 +156,6 @@
 				55738612416C3E702775FA5E /* Pods-SMPhotoEditorSDK_Tests.debug.xcconfig */,
 				A0C2A278F6BA807E7DAAC7DB /* Pods-SMPhotoEditorSDK_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -171,7 +170,6 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				AC0AA6A51B42DE147EC63FAD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,10 +211,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 72NTJSEYLS;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 72NTJSEYLS;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -282,28 +282,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AC0AA6A51B42DE147EC63FAD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SMPhotoEditorSDK_Example/Pods-SMPhotoEditorSDK_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SMPhotoEditorSDK/SMPhotoEditorSDK.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SMPhotoEditorSDK.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SMPhotoEditorSDK_Example/Pods-SMPhotoEditorSDK_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CD3DE2F552AE2A0C6FA398AA /* [CP] Check Pods Manifest.lock */ = {
@@ -482,7 +460,9 @@
 			baseConfigurationReference = 3B7B1F595BB08CC71AA3EE73 /* Pods-SMPhotoEditorSDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 72NTJSEYLS;
 				INFOPLIST_FILE = SMPhotoEditorSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -497,7 +477,9 @@
 			baseConfigurationReference = FD9BCD0E326418882DF54678 /* Pods-SMPhotoEditorSDK_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 72NTJSEYLS;
 				INFOPLIST_FILE = SMPhotoEditorSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -511,6 +493,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 55738612416C3E702775FA5E /* Pods-SMPhotoEditorSDK_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 72NTJSEYLS;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -533,6 +516,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A0C2A278F6BA807E7DAAC7DB /* Pods-SMPhotoEditorSDK_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 72NTJSEYLS;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

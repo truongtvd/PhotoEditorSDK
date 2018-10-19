@@ -7,18 +7,28 @@
 //
 
 import UIKit
-
+import SMPhotoEditorSDK
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var imv:UIImageView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+//        SMPhoto.test()
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    @IBAction func changeAction(_ sender: Any) {
+        
+        let img = UIImage.init(named: "meow")
+        self.imv.image = SMPhoto.CITorusLensDistortion(img!)
+        print("Progress sucess")
+    }
+    
 }
 
