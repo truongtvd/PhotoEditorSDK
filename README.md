@@ -10,19 +10,19 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
-
+    Đệp trai là tải được
 ## Installation
 
 SMPhotoEditorSDK is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'SMPhotoEditorSDK'
+pod 'SMPhotoEditorSDK', :git => 'https://github.com/truongtvd/PhotoEditorSDK.git'
 ```
 
 ## Author
 
-dongka195@live.com, dongka195@live.com
+dongka195@live.com
 
 ## License
 
