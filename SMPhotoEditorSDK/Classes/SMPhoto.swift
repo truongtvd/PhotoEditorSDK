@@ -5,6 +5,15 @@
 //  Created by Nguyễn Đình Đông on 10/18/18.
 //
 
+/*
+ 
+ - Filter image
+ - Custom filter
+ 
+ */
+
+
+
 import Foundation
 import CoreImage
 
@@ -12,18 +21,18 @@ open class SMPhoto : NSObject {
     
     let context = CIContext()
     
-    private class func convert(cmage:CIImage) -> UIImage {
+    private class func convert(cmage:CIImage) -> ( image:UIImage, ciImage:CIImage) {
         let context:CIContext = CIContext.init(options: nil)
         let cgImage:CGImage = context.createCGImage(cmage, from: cmage.extent)!
         let image:UIImage = UIImage.init(cgImage: cgImage)
-        return image
+        return (image,cmage)
     }
     
     //MARK:- CICategoryBlur
     
     //CIBoxBlur
     public class func CIBoxBlur(_ inputImage:UIImage,
-                                _ inputRadius:NSNumber = 10.00) -> UIImage {
+                                _ inputRadius:NSNumber = 10.00) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -38,7 +47,7 @@ open class SMPhoto : NSObject {
     
     //CIDiscBlur
     public class func CIDiscBlur(_ inputImage:UIImage,
-                                 _ inputRadius:NSNumber = 8.00) -> UIImage {
+                                 _ inputRadius:NSNumber = 8.00) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -52,7 +61,7 @@ open class SMPhoto : NSObject {
     
     //CIGaussianBlur
     public class func CIGaussianBlur(_ inputImage:UIImage,
-                                     _ inputRadius:NSNumber = 10.00) -> UIImage {
+                                     _ inputRadius:NSNumber = 10.00) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -67,7 +76,7 @@ open class SMPhoto : NSObject {
     //CIMaskedVariableBlur
     public class func CIMaskedVariableBlur(_ inputImage:UIImage,
                                            _ inputMask:CIImage,
-                                           _ inputRadius:NSNumber = 10.00) -> UIImage {
+                                           _ inputRadius:NSNumber = 10.00) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -81,7 +90,7 @@ open class SMPhoto : NSObject {
     }
     
     //CIMedianFilter
-    public class func CIMedianFilter(_ inputImage:UIImage) -> UIImage {
+    public class func CIMedianFilter(_ inputImage:UIImage) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -94,7 +103,7 @@ open class SMPhoto : NSObject {
     //CIMotionBlur
     public class func CIMotionBlur(_ inputImage:UIImage,
                                    _ inputRadius:NSNumber = 10.00,
-                                   _ inputAngle:NSNumber = 0.00) -> UIImage {
+                                   _ inputAngle:NSNumber = 0.00) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -110,7 +119,7 @@ open class SMPhoto : NSObject {
     //CINoiseReduction
     public class func CINoiseReduction(_ inputImage:UIImage,
                                        _ inputNoiseLevel:NSNumber = 0.02,
-                                       _ inputSharpness:NSNumber = 0.40) -> UIImage {
+                                       _ inputSharpness:NSNumber = 0.40) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -126,7 +135,7 @@ open class SMPhoto : NSObject {
     //CIZoomBlur
     public class func CIZoomBlur(_ inputImage:UIImage,
                                  _ inputCenter:CIVector = CIVector(x: 150, y: 150),
-                                 _ inputAmount:NSNumber = 20.00) -> UIImage {
+                                 _ inputAmount:NSNumber = 20.00) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -146,7 +155,7 @@ open class SMPhoto : NSObject {
     //CIColorClamp
     public class func CIColorClamp(_ inputImage:UIImage,
                                    _ inputMinComponents:CIVector = CIVector.init(x: 0, y: 0, z: 0, w: 0),
-                                   _ inputMaxComponents:CIVector = CIVector.init(x: 1, y: 1, z: 1, w: 1)) -> UIImage {
+                                   _ inputMaxComponents:CIVector = CIVector.init(x: 1, y: 1, z: 1, w: 1)) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -163,7 +172,7 @@ open class SMPhoto : NSObject {
     public class func CIColorControls(_ inputImage:UIImage,
                                       _ inputSaturation:NSNumber = 1.00,
                                       _ inputBrightness:NSNumber = 1.00,
-                                      _ inputContrast:NSNumber = 1.00) -> UIImage {
+                                      _ inputContrast:NSNumber = 1.00) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -183,7 +192,7 @@ open class SMPhoto : NSObject {
                                     _ inputGVector:CIVector = CIVector.init(x: 0, y: 1, z: 0, w: 0),
                                     _ inputBVector:CIVector = CIVector.init(x: 0, y: 0, z: 1, w: 0),
                                     _ inputAVector:CIVector = CIVector.init(x: 0, y: 0, z: 0, w: 1),
-                                    _ inputBiasVector:CIVector = CIVector.init(x: 0, y: 0, z: 0, w: 0)) -> UIImage {
+                                    _ inputBiasVector:CIVector = CIVector.init(x: 0, y: 0, z: 0, w: 0)) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -205,7 +214,7 @@ open class SMPhoto : NSObject {
                                         _ inputGreenCoefficients:CIVector = CIVector.init(x: 0, y: 1, z: 0, w: 0),
                                         _ inputBlueCoefficients:CIVector = CIVector.init(x: 0, y: 0, z: 1, w: 0),
                                         _ inputAlphaCoefficients:CIVector = CIVector.init(x: 0, y: 0, z: 0, w: 1)
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -222,7 +231,7 @@ open class SMPhoto : NSObject {
     
     //CIExposureAdjust
     public class func CIExposureAdjust(_ inputImage:UIImage,
-                                       _ inputEV:NSNumber = 0.50 ) -> UIImage {
+                                       _ inputEV:NSNumber = 0.50 ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -237,7 +246,7 @@ open class SMPhoto : NSObject {
     
     //CIGammaAdjust
     public class func CIGammaAdjust(_ inputImage:UIImage,
-                                    _ inputPower:NSNumber = 0.75 ) -> UIImage {
+                                    _ inputPower:NSNumber = 0.75 ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -251,7 +260,7 @@ open class SMPhoto : NSObject {
     
     //CIHueAdjust
     public class func CIHueAdjust(_ inputImage:UIImage,
-                                  _ inputAngle:NSNumber = 0.00 ) -> UIImage {
+                                  _ inputAngle:NSNumber = 0.00 ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -264,7 +273,7 @@ open class SMPhoto : NSObject {
     }
     
     //CILinearToSRGBToneCurve
-    public class func CILinearToSRGBToneCurve(_ inputImage:UIImage) -> UIImage {
+    public class func CILinearToSRGBToneCurve(_ inputImage:UIImage) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -275,7 +284,7 @@ open class SMPhoto : NSObject {
     }
     
     //CISRGBToneCurveToLinear
-    public class func CISRGBToneCurveToLinear(_ inputImage:UIImage) -> UIImage {
+    public class func CISRGBToneCurveToLinear(_ inputImage:UIImage) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -289,7 +298,7 @@ open class SMPhoto : NSObject {
     public class func CITemperatureAndTint(_ inputImage:UIImage,
                                            _ inputNeutral:CIVector = CIVector.init(x: 6500, y: 0),
                                            _ inputTargetNeutral:CIVector = CIVector.init(x: 6500, y: 0)
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -310,7 +319,7 @@ open class SMPhoto : NSObject {
                                   _ inputPoint3:CIVector = CIVector.init(x: 0.75, y: 0.75),
                                   _ inputPoint4:CIVector = CIVector.init(x: 1, y: 1)
         
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -328,7 +337,7 @@ open class SMPhoto : NSObject {
     
     //CIVibrance
     public class func CIVibrance(_ inputImage:UIImage,
-                                 _ inputAmount:NSNumber = 0.50 ) -> UIImage {
+                                 _ inputAmount:NSNumber = 0.50 ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -342,7 +351,7 @@ open class SMPhoto : NSObject {
     
     //CIWhitePointAdjust
     public class func CIWhitePointAdjust(_ inputImage:UIImage,
-                                         _ inputColor:CIColor ) -> UIImage {
+                                         _ inputColor:CIColor ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -364,7 +373,7 @@ open class SMPhoto : NSObject {
                                              _ inputRedCoefficients:CIVector,
                                              _ inputGreenCoefficients:CIVector,
                                              _ inputBlueCoefficients:CIVector
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -382,7 +391,7 @@ open class SMPhoto : NSObject {
     public class func CIColorCube(_ inputImage:UIImage,
                                   _ inputCubeDimension:NSNumber = 2.00,
                                   _ inputCubeData:NSData
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -400,7 +409,7 @@ open class SMPhoto : NSObject {
                                                 _ inputCubeDimension:NSNumber = 2.00,
                                                 _ inputCubeData:NSData,
                                                 _ inputColorSpace:CGColorSpace
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -417,7 +426,7 @@ open class SMPhoto : NSObject {
     
     //CIColorInvert
     public class func CIColorInvert(_ inputImage:UIImage
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -431,7 +440,7 @@ open class SMPhoto : NSObject {
     //CIColorMap
     public class func CIColorMap(_ inputImage:UIImage,
                                  _ inputGradientImage:UIImage
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let inputGradient = CIImage.init(image: inputGradientImage)
@@ -450,7 +459,7 @@ open class SMPhoto : NSObject {
     public class func CIColorMonochrome(_ inputImage:UIImage,
                                         _ inputColor:CIColor,
                                         _ inputIntensity:NSNumber = 1.00
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -466,7 +475,7 @@ open class SMPhoto : NSObject {
     //CIColorPosterize
     public class func CIColorPosterize(_ inputImage:UIImage,
                                        _ inputLevels:NSNumber = 6.00
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -482,7 +491,7 @@ open class SMPhoto : NSObject {
     public class func CIFalseColor(_ inputImage:UIImage,
                                    _ inputColor0:CIColor,
                                    _ inputColor1:CIColor
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -498,7 +507,7 @@ open class SMPhoto : NSObject {
     
     //CIMaskToAlpha
     public class func CIMaskToAlpha(_ inputImage:UIImage
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -510,7 +519,7 @@ open class SMPhoto : NSObject {
     
     //CIMaximumComponent
     public class func CIMaximumComponent(_ inputImage:UIImage
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -522,7 +531,7 @@ open class SMPhoto : NSObject {
     
     //CIMinimumComponent
     public class func CIMinimumComponent(_ inputImage:UIImage
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -535,7 +544,7 @@ open class SMPhoto : NSObject {
     //Restro
     //CIPhotoEffectChrome
     public class func CIPhotoEffectChrome(_ inputImage:UIImage
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -547,7 +556,7 @@ open class SMPhoto : NSObject {
     
     //CIPhotoEffectFade
     public class func CIPhotoEffectFade(_ inputImage:UIImage
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -559,7 +568,7 @@ open class SMPhoto : NSObject {
     
     //CIPhotoEffectInstant
     public class func CIPhotoEffectInstant(_ inputImage:UIImage
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -571,7 +580,7 @@ open class SMPhoto : NSObject {
     
     //CIPhotoEffectMono
     public class func CIPhotoEffectMono(_ inputImage:UIImage
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -583,7 +592,7 @@ open class SMPhoto : NSObject {
     
     //CIPhotoEffectNoir
     public class func CIPhotoEffectNoir(_ inputImage:UIImage
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -595,7 +604,7 @@ open class SMPhoto : NSObject {
     
     //CIPhotoEffectProcess
     public class func CIPhotoEffectProcess(_ inputImage:UIImage
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -607,7 +616,7 @@ open class SMPhoto : NSObject {
     
     //CIPhotoEffectTonal
     public class func CIPhotoEffectTonal(_ inputImage:UIImage
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -619,7 +628,7 @@ open class SMPhoto : NSObject {
     
     //CIPhotoEffectTransfer
     public class func CIPhotoEffectTransfer(_ inputImage:UIImage
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -631,7 +640,7 @@ open class SMPhoto : NSObject {
     
     //CISepiaTone
     public class func CISepiaTone(_ inputImage:UIImage
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -643,7 +652,7 @@ open class SMPhoto : NSObject {
     
     //CIVignette
     public class func CIVignette(_ inputImage:UIImage
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -658,7 +667,7 @@ open class SMPhoto : NSObject {
                                        _ inputCenter:CIVector = CIVector.init(x: 150, y: 150),
                                        _ inputIntensity:NSNumber = 1.00,
                                        _ inputRadius:NSNumber = 0.00
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -717,7 +726,7 @@ open class SMPhoto : NSObject {
     public class func CIBlendMode(_ inputImage:UIImage,
                                   _ inputBackgroundImage:UIImage,
                                   _ mode:BlendMode
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let bgImage = CIImage.init(image: inputBackgroundImage)
@@ -737,7 +746,7 @@ open class SMPhoto : NSObject {
                                        _ inputCenter:CIVector = CIVector(x: 150, y: 150),
                                        _ inputRadius:NSNumber = 300.00,
                                        _ inputScale:NSNumber = 0.50
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -758,7 +767,7 @@ open class SMPhoto : NSObject {
                                              _ inputRadius:NSNumber = 300.00,
                                              _ inputAngle:NSNumber = 0.00,
                                              _ inputScale:NSNumber = 0.50
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -778,7 +787,7 @@ open class SMPhoto : NSObject {
     public class func CICircleSplashDistortion(_ inputImage:UIImage,
                                                _ inputCenter:CIVector = CIVector(x: 150, y: 150),
                                                _ inputRadius:NSNumber = 150.00
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -796,7 +805,7 @@ open class SMPhoto : NSObject {
                                      _ inputCenter:CIVector = CIVector(x: 150.00, y: 150.00),
                                      _ inputRadius:NSNumber = 150.00,
                                      _ inputAngle:NSNumber = 0.00
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -819,7 +828,7 @@ open class SMPhoto : NSObject {
                                _ inputRotation:NSNumber = 0.00,
                                _ inputZoom:NSNumber = 0.00
         
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -840,7 +849,7 @@ open class SMPhoto : NSObject {
     public class func CIDisplacementDistortion(_ inputImage:UIImage,
                                                _ inputDisplacementImage:UIImage,
                                                _ inputScale:NSNumber = 50.00
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let displacementImage = CIImage.init(image: inputDisplacementImage)
@@ -859,7 +868,7 @@ open class SMPhoto : NSObject {
                                         _ inputTexture:UIImage,
                                         _ inputCenter:CIVector = CIVector.init(x: 150.0, y: 150.0),
                                         _ inputScale:NSNumber = 200.0
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let textureImage = CIImage.init(image: inputTexture)
@@ -880,7 +889,7 @@ open class SMPhoto : NSObject {
                                      _ inputPoint1:CIVector = CIVector.init(x: 350.0, y: 150.0),
                                      _ inputRadius:NSNumber = 100.0,
                                      _ inputRefraction:NSNumber = 100.0
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -899,7 +908,7 @@ open class SMPhoto : NSObject {
     public class func CIHoleDistortion(_ inputImage:UIImage,
                                        _ inputCenter:CIVector = CIVector(x: 150, y: 150),
                                        _ inputRadius:NSNumber = 150.00
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -918,7 +927,7 @@ open class SMPhoto : NSObject {
                                     _ inputCenter:CIVector = CIVector(x: 150, y: 150),
                                     _ inputRotation:NSNumber = 0.00,
                                     _ inputRadius:NSNumber = 0.00
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -930,8 +939,7 @@ open class SMPhoto : NSObject {
         
         
         let output = filter?.outputImage
-        return UIImage.init(ciImage: output!)
-        //        return SMPhoto.convert(cmage: output!)
+        return SMPhoto.convert(cmage: output!)
     }
     
     //CIPinchDistortion
@@ -939,7 +947,7 @@ open class SMPhoto : NSObject {
                                         _ inputCenter:CIVector = CIVector(x: 150, y: 150),
                                         _ inputRadius:NSNumber = 300.0,
                                         _ inputScale:NSNumber = 0.50
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -958,7 +966,7 @@ open class SMPhoto : NSObject {
                                     _ inputSize:CIVector = CIVector(x: 150, y: 150),
                                     _ inputCropAmount:NSNumber = 0.5,
                                     _ inputCenterStretchAmount:NSNumber = 0.5
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -980,7 +988,7 @@ open class SMPhoto : NSObject {
                                             _ inputWidth:NSNumber = 80.00,
                                             _ inputRefraction:NSNumber = 1.70
         
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -1002,7 +1010,7 @@ open class SMPhoto : NSObject {
                                             _ inputRadius:NSNumber = 300.00,
                                             _ inputAngle:NSNumber = 3.14
         
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -1022,7 +1030,7 @@ open class SMPhoto : NSObject {
                                         _ inputRadius:NSNumber = 300.00,
                                         _ inputAngle:NSNumber = 56.55
         
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")
@@ -1044,7 +1052,7 @@ open class SMPhoto : NSObject {
                                          _ inputRadius:NSNumber = 300.00,
                                          _ inputAngle:NSNumber = 56.55
         
-        ) -> UIImage {
+        ) -> ( image:UIImage, ciImage:CIImage) {
         
         let ciImage = CIImage.init(image: inputImage)
         let filter = CIFilter.init(name: "\(#function)")

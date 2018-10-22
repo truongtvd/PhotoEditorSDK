@@ -11,11 +11,12 @@
 		19677C21B7B16E92655B01A4F4C4D2DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		1D9899F0EB6C9A3261E0BCC1CB07367E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		314AAF868930D08AA1974113D9EE8C20 /* Pods-SMPhotoEditorSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 95E468795CFBC222D26A9BB43BD9C28D /* Pods-SMPhotoEditorSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4A44736DAE4F70B95063487AB711D4B8 /* SMPhotoEditorSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A674C71D32386C1ED0A8A0DF5F3C74BF /* SMPhotoEditorSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A44736DAE4F70B95063487AB711D4B8 /* SMPhotoEditorSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CBC540632D94C61BADB00041C9EB77F /* SMPhotoEditorSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D1FA2715738185277CFBEBBD21BF49F /* SMPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBAEF108251DA6ABFBAC5638D2D8F40 /* SMPhoto.swift */; };
 		620A6878C9FC1C5D8D042B78D74C5952 /* Pods-SMPhotoEditorSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A27B5B1D67C4DD9B4EAB99B7B4A13E /* Pods-SMPhotoEditorSDK_Tests-dummy.m */; };
-		6A3FB0038FB9ACBE18C47DB3FAE0777E /* SMPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2BC4605C81CBF2B00707341A3D62F0 /* SMPhoto.swift */; };
+		6B5FB67FE653B0AEBFEA0777A0AC6BE5 /* SMPhotoEditorSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB421A8D116F6A42F855B98DC25C57B /* SMPhotoEditorSDK-dummy.m */; };
+		7F853D275B6DCB06245714E0B07BDBC5 /* SMPhotoEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C062073FB1461A9862F75EBCCF908FA6 /* SMPhotoEdit.swift */; };
 		82EC55C5C35922C9FD23CD6F38A4C422 /* Pods-SMPhotoEditorSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 251FB881E22F6E2DBF2122AD5DED8657 /* Pods-SMPhotoEditorSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7118FFF809CF3AF5C072A4E9C4506C7 /* SMPhotoEditorSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C426AE330386478F9B4E89AF41010237 /* SMPhotoEditorSDK-dummy.m */; };
 		D5BC2A4336F00C4C494E76FC25D52A62 /* Pods-SMPhotoEditorSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CCBD475BAF8D1FCEF91E8BF782189 /* Pods-SMPhotoEditorSDK_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -37,35 +38,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0311034A88ECB8B3E42573BF40E1D3C9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		03890D7E3CCFDF94816A196ADC69CEB9 /* SMPhotoEditorSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SMPhotoEditorSDK.framework; path = SMPhotoEditorSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04654602F8AFB9BD057E32FF324C563E /* Pods-SMPhotoEditorSDK_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SMPhotoEditorSDK_Example-Info.plist"; sourceTree = "<group>"; };
 		08A27B5B1D67C4DD9B4EAB99B7B4A13E /* Pods-SMPhotoEditorSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SMPhotoEditorSDK_Tests-dummy.m"; sourceTree = "<group>"; };
-		124CA636072EC892C60077EB51178B20 /* SMPhotoEditorSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SMPhotoEditorSDK.modulemap; sourceTree = "<group>"; };
-		1F2BC4605C81CBF2B00707341A3D62F0 /* SMPhoto.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SMPhoto.swift; path = SMPhotoEditorSDK/Classes/SMPhoto.swift; sourceTree = "<group>"; };
 		251FB881E22F6E2DBF2122AD5DED8657 /* Pods-SMPhotoEditorSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SMPhotoEditorSDK_Example-umbrella.h"; sourceTree = "<group>"; };
+		30A1791B8ADCB58982015B864347E482 /* SMPhotoEditorSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SMPhotoEditorSDK-prefix.pch"; sourceTree = "<group>"; };
 		30F5A301047EF780960AA6808794E351 /* Pods-SMPhotoEditorSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SMPhotoEditorSDK_Example.modulemap"; sourceTree = "<group>"; };
-		3D1631FED883D5B61E4A0561D46C2CFD /* SMPhotoEditorSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SMPhotoEditorSDK.xcconfig; sourceTree = "<group>"; };
+		3CBAEF108251DA6ABFBAC5638D2D8F40 /* SMPhoto.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SMPhoto.swift; path = SMPhotoEditorSDK/Classes/SMPhoto.swift; sourceTree = "<group>"; };
 		46C92EBF39A0471607CAA13767B8E008 /* Pods-SMPhotoEditorSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SMPhotoEditorSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		58856F202737B8DDF1469370E1854662 /* Pods-SMPhotoEditorSDK_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SMPhotoEditorSDK_Tests-Info.plist"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5C9E3F55F765B7C7F8935FB8F9154DB1 /* Pods-SMPhotoEditorSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SMPhotoEditorSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		650DC5B78BC35D6F9E286A5486A85C8E /* SMPhotoEditorSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SMPhotoEditorSDK-prefix.pch"; sourceTree = "<group>"; };
 		67B0B95835BB4FE4556D334F32A60AA1 /* Pods_SMPhotoEditorSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SMPhotoEditorSDK_Tests.framework; path = "Pods-SMPhotoEditorSDK_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		792870445A6E5968B7C1CEDC4BEF3555 /* Pods-SMPhotoEditorSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SMPhotoEditorSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		7CBC540632D94C61BADB00041C9EB77F /* SMPhotoEditorSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SMPhotoEditorSDK-umbrella.h"; sourceTree = "<group>"; };
 		8232339F228481AB29BE767719D31EC4 /* Pods-SMPhotoEditorSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SMPhotoEditorSDK_Tests.modulemap"; sourceTree = "<group>"; };
 		857416BC6CF6327F2E28D996E134DA13 /* Pods-SMPhotoEditorSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SMPhotoEditorSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8A4CCBD475BAF8D1FCEF91E8BF782189 /* Pods-SMPhotoEditorSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SMPhotoEditorSDK_Example-dummy.m"; sourceTree = "<group>"; };
+		8AB421A8D116F6A42F855B98DC25C57B /* SMPhotoEditorSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SMPhotoEditorSDK-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		95E468795CFBC222D26A9BB43BD9C28D /* Pods-SMPhotoEditorSDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SMPhotoEditorSDK_Tests-umbrella.h"; sourceTree = "<group>"; };
-		9DAC2C708DD16BCA1C72E43997AC09E7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		A674C71D32386C1ED0A8A0DF5F3C74BF /* SMPhotoEditorSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SMPhotoEditorSDK-umbrella.h"; sourceTree = "<group>"; };
+		A6D9897B6F9E58EBA8D80F210BEDAEF5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		B1E05B5D67AA217397DC10DC93124295 /* Pods-SMPhotoEditorSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SMPhotoEditorSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		B21D951F311A44958F12056E8AEF34B6 /* Pods-SMPhotoEditorSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SMPhotoEditorSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BF8E0138B79C563A85471DDD00819B59 /* Pods-SMPhotoEditorSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SMPhotoEditorSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C426AE330386478F9B4E89AF41010237 /* SMPhotoEditorSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SMPhotoEditorSDK-dummy.m"; sourceTree = "<group>"; };
-		CA687D9D5AA83E2C22A5A4122F210FBD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C062073FB1461A9862F75EBCCF908FA6 /* SMPhotoEdit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SMPhotoEdit.swift; path = SMPhotoEditorSDK/Classes/SMPhotoEdit.swift; sourceTree = "<group>"; };
+		C1CE04AF1BD0BD6ED8F35A77C0102758 /* SMPhotoEditorSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SMPhotoEditorSDK.modulemap; sourceTree = "<group>"; };
+		DBCC9EB07828437711DE8F06A9515414 /* SMPhotoEditorSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SMPhotoEditorSDK.xcconfig; sourceTree = "<group>"; };
 		E16AA57EA302C72BB4516D0236C3A426 /* Pods_SMPhotoEditorSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SMPhotoEditorSDK_Example.framework; path = "Pods-SMPhotoEditorSDK_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDBC271FBCF2D47205748CC203CE6931 /* SMPhotoEditorSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = SMPhotoEditorSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E41E82093F04398A74FAFDDEE5C6539D /* SMPhotoEditorSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = SMPhotoEditorSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FFA17D352C20C80EB98CC02AB77A6F5A /* Pods-SMPhotoEditorSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SMPhotoEditorSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +99,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15240A35BF0571837782C299385B8251 /* SMPhotoEditorSDK */ = {
+			isa = PBXGroup;
+			children = (
+				3CBAEF108251DA6ABFBAC5638D2D8F40 /* SMPhoto.swift */,
+				C062073FB1461A9862F75EBCCF908FA6 /* SMPhotoEdit.swift */,
+				98F7E811EADFC689486C61B4D2BAB04D /* Pod */,
+				90EDBFF50A7F23C387C7C7A2A571E2F3 /* Support Files */,
+			);
+			name = SMPhotoEditorSDK;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,49 +119,38 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		616854991C93D59E358DC8E2326A32B9 /* SMPhotoEditorSDK */ = {
-			isa = PBXGroup;
-			children = (
-				1F2BC4605C81CBF2B00707341A3D62F0 /* SMPhoto.swift */,
-				8C4C4A3C7A7838B6339C0805CAC7AA3C /* Pod */,
-				937C725A1625815E007822FA0F126FC5 /* Support Files */,
-			);
-			name = SMPhotoEditorSDK;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				E7623CF425B27DFF0CF26B1AADD27077 /* Development Pods */,
+				D721B8B6BA4744292270FCF8E6083AE0 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				EF9F3653CCA7DF7C699FD39A02051B15 /* Products */,
 				F9A404D73D916AC3152151455F25F08D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8C4C4A3C7A7838B6339C0805CAC7AA3C /* Pod */ = {
+		90EDBFF50A7F23C387C7C7A2A571E2F3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9DAC2C708DD16BCA1C72E43997AC09E7 /* LICENSE */,
-				CA687D9D5AA83E2C22A5A4122F210FBD /* README.md */,
-				FDBC271FBCF2D47205748CC203CE6931 /* SMPhotoEditorSDK.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		937C725A1625815E007822FA0F126FC5 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				124CA636072EC892C60077EB51178B20 /* SMPhotoEditorSDK.modulemap */,
-				3D1631FED883D5B61E4A0561D46C2CFD /* SMPhotoEditorSDK.xcconfig */,
-				C426AE330386478F9B4E89AF41010237 /* SMPhotoEditorSDK-dummy.m */,
-				650DC5B78BC35D6F9E286A5486A85C8E /* SMPhotoEditorSDK-prefix.pch */,
-				A674C71D32386C1ED0A8A0DF5F3C74BF /* SMPhotoEditorSDK-umbrella.h */,
+				C1CE04AF1BD0BD6ED8F35A77C0102758 /* SMPhotoEditorSDK.modulemap */,
+				DBCC9EB07828437711DE8F06A9515414 /* SMPhotoEditorSDK.xcconfig */,
+				8AB421A8D116F6A42F855B98DC25C57B /* SMPhotoEditorSDK-dummy.m */,
+				30A1791B8ADCB58982015B864347E482 /* SMPhotoEditorSDK-prefix.pch */,
+				7CBC540632D94C61BADB00041C9EB77F /* SMPhotoEditorSDK-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/SMPhotoEditorSDK";
+			sourceTree = "<group>";
+		};
+		98F7E811EADFC689486C61B4D2BAB04D /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				0311034A88ECB8B3E42573BF40E1D3C9 /* LICENSE */,
+				A6D9897B6F9E58EBA8D80F210BEDAEF5 /* README.md */,
+				E41E82093F04398A74FAFDDEE5C6539D /* SMPhotoEditorSDK.podspec */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		B309D66974100A5BDFD5C34298AE7D66 /* Pods-SMPhotoEditorSDK_Example */ = {
@@ -190,10 +193,10 @@
 			path = "Target Support Files/Pods-SMPhotoEditorSDK_Tests";
 			sourceTree = "<group>";
 		};
-		E7623CF425B27DFF0CF26B1AADD27077 /* Development Pods */ = {
+		D721B8B6BA4744292270FCF8E6083AE0 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				616854991C93D59E358DC8E2326A32B9 /* SMPhotoEditorSDK */,
+				15240A35BF0571837782C299385B8251 /* SMPhotoEditorSDK */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -290,7 +293,7 @@
 			buildConfigurationList = A0D9BDCFF90E3A8CE1BA87F89F842CC5 /* Build configuration list for PBXNativeTarget "SMPhotoEditorSDK" */;
 			buildPhases = (
 				1F452B79BE0978265292ABD998E41FA4 /* Headers */,
-				3D6973E1DD17407BCA1D18504CC2F71E /* Sources */,
+				9EF262B1996FB6285BFDA6F413B8E3AC /* Sources */,
 				E3011F70A5BB45E478D537434F30FD2B /* Frameworks */,
 				0F11D832F669CEECCE282578FFF06887 /* Resources */,
 			);
@@ -364,20 +367,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3D6973E1DD17407BCA1D18504CC2F71E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6A3FB0038FB9ACBE18C47DB3FAE0777E /* SMPhoto.swift in Sources */,
-				A7118FFF809CF3AF5C072A4E9C4506C7 /* SMPhotoEditorSDK-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		766C4833DF856E6D03961218EDF85950 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				620A6878C9FC1C5D8D042B78D74C5952 /* Pods-SMPhotoEditorSDK_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EF262B1996FB6285BFDA6F413B8E3AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D1FA2715738185277CFBEBBD21BF49F /* SMPhoto.swift in Sources */,
+				7F853D275B6DCB06245714E0B07BDBC5 /* SMPhotoEdit.swift in Sources */,
+				6B5FB67FE653B0AEBFEA0777A0AC6BE5 /* SMPhotoEditorSDK-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,7 +565,7 @@
 		};
 		A5D179F675B5EE15324DA24CF62D0B07 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D1631FED883D5B61E4A0561D46C2CFD /* SMPhotoEditorSDK.xcconfig */;
+			baseConfigurationReference = DBCC9EB07828437711DE8F06A9515414 /* SMPhotoEditorSDK.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
@@ -703,7 +707,7 @@
 		};
 		F7F559E0680BD25FA78A843569F9B86A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D1631FED883D5B61E4A0561D46C2CFD /* SMPhotoEditorSDK.xcconfig */;
+			baseConfigurationReference = DBCC9EB07828437711DE8F06A9515414 /* SMPhotoEditorSDK.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";

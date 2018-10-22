@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     @IBAction func changeAction(_ sender: Any) {
         
         let img = UIImage.init(named: "meow")
-        self.imv.image = SMPhoto.CIBoxBlur(img!)
+        self.imv.image = SMPhoto.CIBoxBlur(img!).image
         print("Progress sucess")
     }
     
