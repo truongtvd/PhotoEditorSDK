@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,18 +21,15 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Zes-RW-aUt">
-                                <rect key="frame" x="8" y="183.5" width="359" height="300"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meow" translatesAutoresizingMaskIntoConstraints="NO" id="xDI-qG-RKA">
-                                        <rect key="frame" x="0.0" y="0.0" width="359" height="146"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="319.5"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2jZ-cH-XDE">
-                                        <rect key="frame" x="0.0" y="154" width="359" height="146"/>
+                                        <rect key="frame" x="0.0" y="327.5" width="375" height="319.5"/>
                                     </imageView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="4hG-aw-NYA"/>
-                                </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnB-wr-ScI">
                                 <rect key="frame" x="137.5" y="567" width="100" height="50"/>
@@ -49,12 +45,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Zes-RW-aUt" secondAttribute="trailing" id="Pjd-Lv-rgI"/>
                             <constraint firstItem="cnB-wr-ScI" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Ufn-Ws-wbm"/>
-                            <constraint firstItem="Zes-RW-aUt" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="f7R-Eg-SRU"/>
-                            <constraint firstAttribute="trailing" secondItem="Zes-RW-aUt" secondAttribute="trailing" constant="8" id="lyw-Ig-NQz"/>
-                            <constraint firstItem="Zes-RW-aUt" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="8" id="nLE-iR-MBb"/>
+                            <constraint firstItem="Zes-RW-aUt" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="q1K-SJ-FSK"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="cnB-wr-ScI" secondAttribute="bottom" constant="50" id="qVb-i8-1en"/>
-                            <constraint firstItem="Zes-RW-aUt" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="yfh-un-Vmy"/>
+                            <constraint firstAttribute="bottom" secondItem="Zes-RW-aUt" secondAttribute="bottom" id="qX9-pV-L4c"/>
+                            <constraint firstItem="Zes-RW-aUt" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="yhA-l1-HHg"/>
                         </constraints>
                     </view>
                     <connections>
@@ -67,6 +63,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="meow" width="1600" height="911"/>
+        <image name="meow" width="1600" height="1067"/>
     </resources>
 </document>
