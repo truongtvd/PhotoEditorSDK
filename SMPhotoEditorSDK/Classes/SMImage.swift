@@ -5,6 +5,8 @@
 //  Created by Nguyễn Đình Đông on 10/22/18.
 //
 
+//Phần này xử lý chuyên sâu về image, giá trị trả về là 1 CIImage
+
 import Foundation
 import CoreImage
 

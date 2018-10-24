@@ -38,5 +38,5 @@ SMARTMOVE SMARTMOVE SMARTMOVE SMARTMOVE SMARTMOVE SMARTMOVE SMARTMOVE SMARTMOVE
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
    s.frameworks = 'UIKit','CoreImage'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.dependency 'CropViewController', '~> 2.3.7'
 end

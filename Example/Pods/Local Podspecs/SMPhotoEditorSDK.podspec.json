@@ -24,5 +24,10 @@
   "frameworks": [
     "UIKit",
     "CoreImage"
-  ]
+  ],
+  "dependencies": {
+    "CropViewController": [
+      "~> 2.3.7"
+    ]
+  }
 }

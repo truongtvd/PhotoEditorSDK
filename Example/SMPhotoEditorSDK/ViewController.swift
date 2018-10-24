@@ -8,7 +8,9 @@
 
 import UIKit
 import SMPhotoEditorSDK
-class ViewController: UIViewController {
+import CropViewController
+
+class ViewController: UIViewController, CropViewControllerDelegate {
     
     @IBOutlet weak var imv:UIImageView!
     
@@ -23,11 +25,40 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    let maskView = UIImageView()
+
     @IBAction func changeAction(_ sender: Any) {
         
         let img = UIImage.init(named: "meow")
         self.imv.image = SMPhoto.CIPhotoEffectChrome(img!).image
+        
+        maskView.image = UIImage.init(named: "8800")
+        maskView.contentMode = .scaleAspectFit
+        self.imv.mask = maskView
+        
         print("Progress sucess")
+        
+//        self.presentCropViewController()
+        
+        
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        maskView.frame = imv.bounds
+    }
+    
+    func presentCropViewController() {
+        let image: UIImage = UIImage.init(named: "meow")!
+        
+        let cropViewController = CropViewController(image: image)
+        cropViewController.delegate = self
+        present(cropViewController, animated: true, completion: nil)
+    }
+    
+    func cropViewController(_ cropViewController: CropViewController, didCropToImage image: UIImage, withRect cropRect: CGRect, angle: Int) {
+        // 'image' is the newly cropped version of the original image
     }
     
 }

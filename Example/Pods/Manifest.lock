@@ -1,15 +1,22 @@
 PODS:
-  - SMPhotoEditorSDK (0.1.0)
+  - CropViewController (2.3.8)
+  - SMPhotoEditorSDK (0.1.0):
+    - CropViewController (~> 2.3.7)
 
 DEPENDENCIES:
   - SMPhotoEditorSDK (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CropViewController
 
 EXTERNAL SOURCES:
   SMPhotoEditorSDK:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SMPhotoEditorSDK: 3c7ccbe87524887941e0b38fc6d727fc31aa34d1
+  CropViewController: 7be882b7d3fb3faef48a41924e80f689e9df2514
+  SMPhotoEditorSDK: bbbc648f54c984a4164f516268059f0ba2973874
 
 PODFILE CHECKSUM: ce734b45874390482b0fb2f20f41daf05fcb40b7
 
