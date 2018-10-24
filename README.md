@@ -17,7 +17,7 @@ SMPhotoEditorSDK is available through [CocoaPods](https://cocoapods.org). To ins
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'SMPhotoEditorSDK', :git => 'https://github.com/truongtvd/PhotoEditorSDK.git'
+pod 'SMPhotoEditorSDK'
 ```
 
 ## Author
