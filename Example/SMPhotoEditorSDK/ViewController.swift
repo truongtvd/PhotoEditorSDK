@@ -10,6 +10,9 @@ import UIKit
 import SMPhotoEditorSDK
 class ViewController: UIViewController {
     
+    
+//    var customView:MyCustomView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
