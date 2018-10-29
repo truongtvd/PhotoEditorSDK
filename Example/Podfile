@@ -1,7 +1,6 @@
 use_frameworks!
 
-
-source 'https://github.com/truongtvd/PhotoEditorSDK.git'
+#source 'https://github.com/truongtvd/PhotoEditorSDK.git'
 target 'SMPhotoEditorSDK_Example' do
     
 #  pod 'SMPhotoEditorSDK', :path => '../'
