@@ -11,7 +11,7 @@ import SMPhotoEditorSDK
 class ViewController: UIViewController {
     
     
-//    var customView:MyCustomView!
+    var customView:SMCollageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

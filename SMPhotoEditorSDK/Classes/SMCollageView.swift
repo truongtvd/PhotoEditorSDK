@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class SMCollageView : UIView {
+open class SMCollageView : UIView {
     
     
 }
