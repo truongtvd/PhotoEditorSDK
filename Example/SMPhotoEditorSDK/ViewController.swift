@@ -7,14 +7,12 @@
 //
 
 import UIKit
-
+import SMPhotoEditorSDK
 class ViewController: UIViewController {
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        let v = SMCollageView()
+        
     }
 
 }

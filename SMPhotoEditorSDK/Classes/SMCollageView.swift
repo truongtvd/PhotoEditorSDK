@@ -7,18 +7,13 @@
 
 import Foundation
 class SMCollageView : UIView {
-    var imageView :UIImageView!
     
-    var cutter:UIBezierPath!
-    var maskLayer:CAShapeLayer!
-
-    override func draw(_ rect: CGRect) {
-        
-        imageView = UIImageView(frame: rect)
-        imageView.image = UIImage.init(named: "meow")
-        imageView.isUserInteractionEnabled = true
-        
-        self.addSubview(imageView)
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
     }
     
     
