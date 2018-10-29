@@ -32,9 +32,9 @@ SMARTMOVE SMARTMOVE SMARTMOVE SMARTMOVE SMARTMOVE SMARTMOVE SMARTMOVE SMARTMOVE
   s.swift_version = '4.0'
   s.source_files = 'SMPhotoEditorSDK/Classes/**/*'
   s.static_framework = true
-  # s.resource_bundles = {
-  #   'SMPhotoEditorSDK' => ['SMPhotoEditorSDK/Assets/*.png']
-  # }
+  s.resource_bundles = {
+     'SMPhotoEditorSDK' => ['SMPhotoEditorSDK/Assets/Image/meow.jpg']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
    s.frameworks = 'UIKit','CoreImage'
